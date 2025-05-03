@@ -1,0 +1,201 @@
+body {
+    background-image: url('../assets/image/background1.png'), url('../assets/image/background2.png'); /* 画像ファイル名を指定 */
+    background-size: 100% auto, 50% auto; /* 画像のサイズを指定 */
+    background-repeat: no-repeat,no-repeat; /* 繰り返しを防ぐ */
+    background-position: center top, right calc(100vw - 30vw);
+    background-color: #444444;
+}
+.navbar img{
+    width: 13vw;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4vw 0.4vw;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 2vw;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8vw;
+}
+
+.menu a:hover {
+    color: #ffcc00; /* ホバー時の色を変更 */
+}
+
+/*--welcomeText--*/
+
+.welcomeArea {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.2vw 2vw;
+    align-items: center;
+}
+.welcomeTextArea {
+    flex: 1;
+}
+.welcome-text {
+    font-size: 3vw;
+    transition: font-size 0.8s ease;
+    margin: 1vw 0;
+    color: #ffffff;
+}
+.welcome-text.active {
+    font-size: 6vw;
+    font-weight: bold;
+}
+.welcomeDescriptionArea {
+    flex: 1;
+    font-size: 4vw;
+    text-align: center;
+    color: #ffffff;
+}
+
+.locationArea {
+    background-color: #222222;
+    margin: 1vw 2vw;
+    border-radius: 1vw;
+    padding: 1vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 255, 0.5);
+}
+.locationArea-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.locationArea-subtitle {
+    color: #0000dd;
+    font-weight: 1000;
+    margin: 0;
+    font-size: 3vw;
+}
+.locationArea-text {
+    color: #fff;
+    margin: 0;
+    font-size: 2vw;
+}
+
+.membersArea {
+    background-color: #222222;
+    margin: 1vw 2vw;
+    border-radius: 1vw;
+    padding: 1vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 255, 0.5);
+    justify-items: center;
+}
+.membersArea-content {
+    width: 65vw;
+}
+.membersArea-subtitle {
+    color: #0000dd;
+    font-weight: 1000;
+    margin: 0;
+    font-size: 3vw;
+}
+.membersArea-text {
+    display: flex;
+    justify-content: center;
+}
+.memberCard {
+    width: 60vw;
+    border-radius: 1vw;
+    border-color: #0000dd;
+    border-style: solid;
+    margin: 0.5vw 1vw
+}
+.memberName {
+    color: #dd0000;
+    font-weight: 1000;
+    margin: 0 1vw;
+    font-size: 2.2vw;
+}
+.memberText {
+    color: #fff;
+    margin: 0 1vw;
+    font-size: 1.5vw;
+}
+
+.AwardsArea {
+    background-color: #222222;
+    margin: 1vw 2vw;
+    border-radius: 1vw;
+    padding: 1vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 255, 0.5);
+    width:40vw
+}
+.AwardsArea-subtitle {
+    color: #0000dd;
+    font-weight: 1000;
+    margin: 0 2vw;
+    font-size: 3vw;
+}
+.AwardsArea-contest {
+    color: #dd0000;
+    font-weight: 1000;
+    margin: 0 1vw;
+    margin-left: 4vw;
+    font-size: 1.9vw;
+}
+.AwardsArea-award {
+    color: #fff;
+    margin: 0 1vw;
+    margin-left: 6vw;
+    font-size: 1.5vw;   
+}
+
+.homePageDesplayButton {
+    background-color: #222222;
+    margin: 1vw 0.1vw 1vw 2vw;
+    color: #ffffff;
+    font-size: 2vw;
+    border-radius: 2vw;
+    padding: 1vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 255, 0.5);
+    width:20vw;
+}
+
+.sponsorArea {
+    background-color: #222222;
+    margin: 1vw 0 0 -3vw;
+    border-radius: 1vw;
+    padding: 1vw;
+    width: 102vw;
+    justify-items: center;
+}
+.sponsorArea-subtitle {
+    color: #fff;
+    font-weight: 1000;
+    margin: 0;
+    margin-bottom: 2vw;
+    padding: 0;
+    font-size: 3vw;
+}
+.sponsorLogo {
+    width: 17vw;
+}
+
+.footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 1vw 0;
+    margin-left: -3vw;
+    margin-bottom: -3vw;
+    font-size: 2vw;
+    width: 102vw;
+}

@@ -1,1 +1,94 @@
-あ
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tachyon web</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        
+    </head>
+    <body>
+        <header class="navbar">
+            <img src="assets/image/Tachyon_logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT UA</a></li>
+                    <li><a href="#about">NEWS</a></li>
+                    <li><a href="#contact">BLOG</a></li>
+                    <li><a href="#about">GAME</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="welcomeArea">
+            <div class="welcomeTextArea">
+                <p id="welcomeText1" class="welcome-text">DESIGN</p>
+                <p id="welcomeText2" class="welcome-text">ELECTRIC</p>
+                <p id="welcomeText3" class="welcome-text">VISON</p>
+                <p id="welcomeText4" class="welcome-text">SOFTWARE</p>
+            </div>
+            <div class="welcomeDescriptionArea">
+                <p id="wlcome-description">ここに説明が表示されます。</p>
+            </div>
+        </main>
+        <script src="scripts/welcomeText.js"></script>
+
+        <div class="locationArea">
+            <div class="locationArea-content">
+                <div style="width: 40vw;">
+                    <p class="locationArea-subtitle">Location</p>
+                    <p class="locationArea-text">We are a Japanese team. We are based in Fukuoka and Tokyo, 1000 km from each other.</p>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1BClWii--T0y6wSuHmcOsjp8jwFZgdiA&ehbc=2E312F&noprof=1" style="width: 25vw;height: 14vw;"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="membersArea">
+            <div class="membersArea-content">
+                <p class="membersArea-subtitle">Members</p>
+                <div class="membersArea-text">
+                    <div class="memberCard">
+                        <p class="memberName">Yu Nakano</p>
+                        <p class="memberText">Affiliation: <a href="https://www.uec.ac.jp/">The University of Electro-Communications</a></p>
+                        <p class="memberText">Role: Electrical system design, Programing</p>
+                    </div>
+                    <div class="memberCard">
+                        <p class="memberName">Yo Nakano</p>
+                        <p class="memberText">Affiliation: <a href="https://www.kyushu-u.ac.jp/ja/">Kyushu University</a></p>
+                        <p class="memberText">Role: Body design, Programing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="AwardsArea">
+            <div class="AwardsArea-content">
+                <div>
+                    <p class="AwardsArea-subtitle">Awards</p>
+                    <p class="AwardsArea-contest">RoboCup Junior Japan Open Nagoya</p>
+                    <p class="AwardsArea-award">Best Presentation Award</p>
+                    <p class="AwardsArea-award">Judges' Special Award</p>
+                    <p class="AwardsArea-award">Sponsor Award</p>
+                    <p class="AwardsArea-contest">RoboCup Junior 2025 Kanto Block Competition</p>
+                    <p class="AwardsArea-award">1st Prize</p>
+                </div>
+            </div>
+        </div>
+        <button class="homePageDesplayButton" onclick="location.href='#'">NEWS ></button>
+        <button class="homePageDesplayButton" onclick="location.href='#'">BLOG ></button>
+        <br>
+        <button class="homePageDesplayButton" onclick="location.href='#'">CONTACT ></button>
+        <button class="homePageDesplayButton" onclick="location.href='#'">ABOUT UA ></button>
+        <br>
+        <button class="homePageDesplayButton" onclick="location.href='#'">🎮GAME ></button>
+        <div class="sponsorArea">
+            <p class="sponsorArea-subtitle">- Sponsor -</p>
+            <div class="sponsorArea-content">
+                <img src="assets/image/sponsor-jlcpcb.png" alt="Logo" class="sponsorLogo">
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer-text">Copyright © 2025 Tachyon. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
