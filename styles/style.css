@@ -2,7 +2,7 @@ body {
     background-image: url('../assets/image/background1.png'), url('../assets/image/background2.png'); /* 画像ファイル名を指定 */
     background-size: 100% auto, 50% auto; /* 画像のサイズを指定 */
     background-repeat: no-repeat,no-repeat; /* 繰り返しを防ぐ */
-    background-position: center top, right calc(100vw - 30vw);
+    background-position: center top, right calc(60vh + 35vw);
     background-color: #444444;
 }
 .navbar img{
@@ -45,6 +45,7 @@ body {
     justify-content: flex-start;
     margin: 0.2vw 2vw;
     align-items: center;
+    height: 480px;
 }
 .welcomeTextArea {
     flex: 1;
@@ -52,7 +53,7 @@ body {
 .welcome-text {
     font-size: 3vw;
     transition: font-size 0.8s ease;
-    margin: 1vw 0;
+    margin: 10px 0;
     color: #ffffff;
 }
 .welcome-text.active {
