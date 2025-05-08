@@ -91,13 +91,13 @@ body {
     background-color: rgba(0, 0, 255, 0.5);
     border-radius: 50%;
     font-weight: 1000;
-    font-size: 7vw;
+    font-size: 7rem;
 }
 .locationArea-text {
     color: #fff;
     margin: 0;
     margin-top: 1vw;
-    font-size: 4vw;
+    font-size: 4rem;
 }
 
 .membersArea {
@@ -112,7 +112,7 @@ body {
     background-color: rgba(0, 0, 255, 0.5);
     border-radius: 50%;
     font-weight: 1000;
-    font-size: 7vw;
+    font-size: 7rem;
 }
 .memberCard {
     width: 100%;
@@ -127,12 +127,12 @@ body {
     color: #dd0000;
     font-weight: 1000;
     margin: 0 1vw;
-    font-size: 2.2vw;
+    font-size: 4rem;
 }
 .memberText {
     color: #fff;
     margin: 0 1vw;
-    font-size: 1.5vw;
+    font-size: 3rem;
 }
 
 .AwardsArea {
@@ -144,14 +144,14 @@ body {
     background-color: rgba(0, 0, 255, 0.5);
     border-radius: 50%;
     font-weight: 1000;
-    font-size: 7vw;
+    font-size: 7rem;
 }
 .AwardsArea-contest {
     color: #dd0000;
     font-weight: 1000;
     margin: 0 1vw;
     margin-left: 4vw;
-    font-size: 1.9vw;
+    font-size: 4rem;
 }
 .AwardsArea-box {
     width: 100%;
@@ -166,7 +166,7 @@ body {
     color: #fff;
     margin: 0 1vw;
     margin-left: 6vw;
-    font-size: 1.5vw;   
+    font-size: 3rem;   
 }
 
 .homePageDesplayButton {
@@ -192,7 +192,7 @@ body {
     background-color: rgba(0, 0, 255, 0.5);
     border-radius: 50%;
     font-weight: 1000;
-    font-size: 7vw;
+    font-size: 7rem;
 }
 .sponsorArea-content {
     background-color: #222222;
