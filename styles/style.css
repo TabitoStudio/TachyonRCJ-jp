@@ -6,7 +6,7 @@ body {
     background-color: #000000;
 }
 .navbar img{
-    width: 13vw;
+    width: 25vw;
 }
 
 .navbar {
@@ -31,7 +31,7 @@ body {
 .menu a {
     text-decoration: none;
     color: white;
-    font-size: 1.8vw;
+    font-size: 1.3rem;
 }
 
 .menu a:hover {
