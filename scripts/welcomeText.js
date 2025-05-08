@@ -1,26 +1,45 @@
 const texts = document.querySelectorAll('.welcome-text');
-            const description = document.getElementById('wlcome-description');
-            const descriptions = [
-                "The fuselage is made of aluminum alloy, the surface of which is anodized.",
-                "A printed circuit board designed in a unique shape is mounted on the robot.",
-                "Search all around the robot using multiple cameras, fisheye lenses, and wide-angle lenses",
-                "A proprietary microcontroller board using RP2040 controls the robot."
-            ];
-            
-            let currentIndex = 0;
-            
-            function updateText() {
-                // 全てのテキストをリセット
-                texts.forEach((text, index) => {
-                    text.classList.remove('active');
-                });
-                texts[currentIndex].classList.add('active');
-                description.textContent = descriptions[currentIndex];
-                currentIndex = (currentIndex + 1) % texts.length;
-            }
-            
-            // 5秒ごとに更新
-            setInterval(updateText, 8000);
-            
-            // 初期化
-            updateText();
+const description = document.getElementById('wlcome-description');
+const descriptions = [
+    "The fuselage is made of aluminum alloy, the surface of which is anodized.",
+    "A proprietary microcontroller board using RP2040 controls the robot.",
+    "Search all around the robot using multiple cameras, fisheye lenses, and wide-angle lenses",
+    "A printed circuit board designed in a unique shape is mounted on the robot."
+];
+const positions = [
+    { top: '10%', left: '50%', transform: 'translate(-50%, -50%)' }, // 上
+    { top: '50%', left: '10%', transform: 'translate(-50%, -50%)' }, // 右
+    { top: '80%', left: '50%', transform: 'translate(-50%, -50%)' }, // 下
+    { top: '50%', left: '90%', transform: 'translate(-50%, -50%)' }  // 左
+];
+
+let currentIndex = 0;
+
+function rotateTexts() {
+    texts.forEach((text) => {
+        text.classList.remove('active');
+    });
+
+    // テキストの位置を更新
+    texts.forEach((text, index) => {
+        const position = positions[(index + currentIndex) % positions.length];
+        text.style.top = position.top;
+        text.style.left = position.left;
+        text.style.transform = position.transform;
+
+        // 現在「上」にあるテキストにactiveクラスを付与
+        if ((index + currentIndex) % positions.length === 0) {
+            text.classList.add('active');
+        }
+    });
+
+    // 説明文を更新
+    description.textContent = descriptions[currentIndex];
+
+    // インデックスを更新
+    currentIndex = (currentIndex + 1) % positions.length;
+}
+rotateTexts();
+
+// 5秒ごとに回転
+setInterval(rotateTexts, 5000);
