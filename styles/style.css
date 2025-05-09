@@ -68,8 +68,9 @@ body {
 .welcomeDescriptionArea {
     position: absolute;
     width: 50%;
-    left: 25%;
-    top: 30%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* 自身の幅と高さの50%分だけ移動して中央揃え */
     background-color: rgba(0, 0, 255, 0.5); /* 背景色を指定 */
     border-radius: 90%;
     flex: 1;
@@ -218,4 +219,10 @@ body {
     margin-bottom: -3vw;
     font-size: 2vw;
     width: 102vw;
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-size: 100vw auto;
+    }
 }
