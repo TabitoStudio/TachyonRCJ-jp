@@ -56,13 +56,16 @@ body {
     position: absolute;
     font-size: 2.5rem;
     transition: font-size 0.8s ease;
+    transition: color 0.8s ease;
     transition: all 1.5s ease;;
     color: #ffffff;
+    background-color: rgba(255, 255, 0, 0.5);
+    border-radius: 50%;
 }
 .welcome-text.active {
     font-size: 7rem;
     font-weight: bold;
-    background-color: rgba(0, 200, 255, 0.8);
+    background-color: rgba(0, 200, 255, 0.5);
     border-radius: 50%;
 }
 .welcomeDescriptionArea {
@@ -81,7 +84,6 @@ body {
 
 .locationArea {
     padding: 1vw;
-    
 }
 .locationArea-content {
     justify-content: space-between;
@@ -100,6 +102,14 @@ body {
     margin: 0;
     margin-top: 1vw;
     font-size: 4rem;
+}
+.locationTextArea-text {
+        width: 90%;
+}
+.locationArea-map {
+    width: 100%;
+    height: 50vw;
+    margin: 1vw;
 }
 
 .membersArea {
@@ -224,5 +234,193 @@ body {
 @media (min-width: 1200px) {
     body {
         background-size: 100vw auto;
+    }
+    .navbar img{
+        width: 15vw;
+    }
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+    }
+    .welcomeArea {
+        display: flex;
+        justify-content: flex-start;
+        height: 1150px;
+        padding: 10px;
+    }
+    .welcomeTextArea {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex: 1;
+    }
+    .welcome-text {
+        font-size: 4rem;
+    }
+    .welcome-text.active {
+        font-size: 7rem;
+    }
+    .welcomeDescriptionArea {
+        width: 40%;
+        font-size: 4rem;
+    }
+
+    .locationArea {
+        padding: 1vw;
+        width:70vw;
+        margin-left: 15vw;
+        margin-top: 5vw;
+    }
+    .locationArea-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .locationArea-subtitle {
+        color: #ffff00;
+        display: inline;;
+        background-color: rgba(0, 0, 255, 0.5);
+        border-radius: 50%;
+        font-weight: 1000;
+        font-size: 5rem;
+    }
+    .locationArea-text {
+        color: #fff;
+        margin: 0;
+        margin-top: 1vw;
+        font-size: 3rem;
+    }
+    .locationTextArea-text {
+        width: 60%;
+    }
+    .locationArea-map {
+        width: 30vw;
+        height: 20vw;
+        margin: 1vw;
+    }
+    
+    .membersArea {
+        padding: 1vw;
+        width: 70vw;
+        margin-left: 15vw;
+    }
+    .membersArea-content {
+        width: 100%;
+    }
+    .membersArea-subtitle {
+        color: #ffff00;
+        display: inline;;
+        background-color: rgba(0, 0, 255, 0.5);
+        border-radius: 50%;
+        font-weight: 1000;
+        font-size: 5rem;
+    }
+    .memberCard {
+        width: 90%;
+        border-radius: 1vw;
+        background-color: #333333;
+        box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 255, 0.5);
+        border-style: solid;
+        margin: 0.5vw 1vw;
+        padding: 1vw;
+    }
+    .memberName {
+        color: #dd0000;
+        font-weight: 1000;
+        margin: 0 1vw;
+        font-size: 3rem;
+    }
+    .memberText {
+        color: #fff;
+        margin: 0 1vw;
+        font-size: 2rem;
+    }
+    
+    .AwardsArea {
+        padding: 1vw;
+        width: 70vw;
+        margin-left: 15vw;
+    }
+    .AwardsArea-subtitle {
+        color: #ffff00;
+        display: inline;;
+        background-color: rgba(0, 0, 255, 0.5);
+        border-radius: 50%;
+        font-weight: 1000;
+        font-size: 5rem;
+    }
+    .AwardsArea-contest {
+        color: #dd0000;
+        font-weight: 1000;
+        margin: 0 1vw;
+        margin-left: 4vw;
+        font-size: 3rem;
+    }
+    .AwardsArea-box {
+        width: 90%;
+        border-radius: 1vw;
+        background-color: #333333;
+        box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 255, 0.5);
+        border-style: solid;
+        margin: 0.5vw 1vw;
+        padding: 1vw;
+    }
+    .AwardsArea-award {
+        color: #fff;
+        margin: 0 1vw;
+        margin-left: 6vw;
+        font-size: 2rem;   
+    }
+    
+    .homePageDesplayButton {
+        background-color: #222222;
+        margin: 1vw 0.1vw 1vw 12vw;
+        color: #ffffff;
+        font-size: 2rem;
+        border-radius: 2vw;
+        padding: 1vw;
+        box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 255, 0.5);
+        width:30vw;
+    }
+    
+    .sponsorArea {
+        border-radius: 1vw;
+        padding: 1vw;
+        width: 70vw;
+        margin-left: 15vw;
+        
+    }
+    .sponsorArea-subtitle {
+        color: #ffff00;
+        display: inline;;
+        background-color: rgba(0, 0, 255, 0.5);
+        border-radius: 50%;
+        font-weight: 1000;
+        font-size: 5rem;
+    }
+    .sponsorArea-content {
+        background-color: #222222;
+        margin: 1vw 0.1vw 1vw 0vw;
+        color: #ffffff;
+        font-size: 4vw;
+        border-radius: 2vw;
+        padding: 1vw;
+        box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 255, 0.5);
+        width:90%;
+    }
+    .sponsorLogo {
+        width: 15vw;
+    }
+    
+    .footer {
+        background-color: #222222;
+        color: #ffffff;
+        text-align: center;
+        padding: 1vw 0;
+        margin-left: -3vw;
+        margin-bottom: -3vw;
+        font-size: 2rem;
+        width: 102vw;
     }
 }

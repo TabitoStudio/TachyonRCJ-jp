@@ -42,4 +42,4 @@ function rotateTexts() {
 rotateTexts();
 
 // 5秒ごとに回転
-setInterval(rotateTexts, 5000);
+setInterval(rotateTexts, 7000);
