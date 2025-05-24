@@ -8,6 +8,7 @@ document.querySelectorAll('.movable-pop').forEach(pop => {
     // 閉じるボタン
     pop.querySelector('.pop-close-btn').addEventListener('click', function(e) {
         e.stopPropagation();
+        e.preventDefault();  
         pop.style.display = 'none';
     });
 
