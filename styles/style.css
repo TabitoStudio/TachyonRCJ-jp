@@ -219,6 +219,10 @@ body {
 .sponsorLogo {
     width: 30vw;
 }
+.support-member-subtitle {
+    color: #fff;
+    font-size: 3rem;
+}
 
 .footer {
     background-color: #222222;
@@ -229,6 +233,73 @@ body {
     margin-bottom: -3vw;
     font-size: 2vw;
     width: 102vw;
+}
+
+.movable-pop {
+    position: absolute; /* fixed → absolute に変更 */
+    width: 33vw;
+    min-width: 250px;
+    max-width: 500px;
+    background: #FF0066;
+    border-radius: 2vw;
+    box-shadow: 0 1.5vw 3vw 0 rgba(0, 0, 255, 0.55) ;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+    cursor: grab;
+    user-select: none;
+    transition: box-shadow 0.2s;
+    box-sizing: border-box;
+}
+.movable-pop:active {
+    box-shadow: 0 1.5vw 3vw 0 rgba(255, 155, 0, 0.55) 
+}
+.pop-image {
+    width: 100%;
+    object-fit: cover;       
+    -webkit-user-drag: none; 
+    user-select: none;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+}
+.pop-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    flex: 1;
+    padding: 0.5vw;
+    text-align: center;
+}
+.pop-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 2.2rem;
+    height: 2.2rem;
+    background: #e53935;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.pop-close-btn::before, .pop-close-btn::after {
+    content: '';
+    position: absolute;
+    width: 1.2rem;
+    height: 0.18rem;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    border-radius: 2px;
+}
+.pop-close-btn::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.pop-close-btn::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 @media (min-width: 1200px) {
@@ -422,5 +493,9 @@ body {
         margin-bottom: -3vw;
         font-size: 2rem;
         width: 102vw;
+    }
+    .support-member-subtitle {
+        color: #fff;
+        font-size: 2rem;
     }
 }

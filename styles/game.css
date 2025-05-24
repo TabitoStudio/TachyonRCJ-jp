@@ -1,0 +1,27 @@
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4列 */
+    grid-template-rows: repeat(4, 1fr); /* 4行 */
+    gap: 5px; /* ピース間の隙間 */
+    width: 400px; /* パズル全体の幅 */
+    height: 400px; /* パズル全体の高さ */
+    margin: 50px auto; /* 中央揃え */
+    border: 2px solid #000;
+}
+
+.puzzle-piece {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0; /* テキストを非表示にする */
+}
+
+.puzzle-piece.empty {
+    background-color: #ccc; /* 空のピースの背景色 */
+    cursor: default;
+}

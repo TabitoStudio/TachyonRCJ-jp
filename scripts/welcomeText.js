@@ -1,9 +1,9 @@
 const texts = document.querySelectorAll('.welcome-text');
 const description = document.getElementById('wlcome-description');
 const descriptions = [
-    "The fuselage is made of aluminum alloy, the surface of which is anodized.",
-    "A proprietary microcontroller board using RP2040 controls the robot.",
-    "Search all around the robot using multiple cameras, fisheye lenses, and wide-angle lenses",
+    "The fuselage is made of aluminum alloy with an anodized surface.",
+    "A custom microcontroller board based on the RP2040 controls the robot.",
+    "Our robot uses multiple fisheye and wide-angle cameras to explore its surroundings.",
     "A printed circuit board designed in a unique shape is mounted on the robot."
 ];
 const positions = [

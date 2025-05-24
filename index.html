@@ -10,11 +10,11 @@
             <img src="assets/image/Tachyon_logo.png" alt="Logo" class="logo">
             <nav>
                 <ul class="menu">
-                    <li><a href="#home">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="#about">ABOUT UA</a></li>
                     <li><a href="#about">NEWS</a></li>
                     <li><a href="#contact">BLOG</a></li>
-                    <li><a href="#about">GAME</a></li>
+                    <li><a href="#">GAME</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
@@ -32,11 +32,26 @@
             </div>
         </main>
         <script src="scripts/welcomeText.js"></script>
+        <div id="movable-pop" class="movable-pop" style="top: 8vw;left: 4vw;background: #FF0066;">
+            <button class="pop-close-btn" id="pop-close-btn" aria-label="close"></button>
+            <img src="assets/image/pop/cloudfanMain.png" alt="Pop Image" class="pop-image" draggable="false">
+            <div class="pop-text">Crowdfunding coming soon!</div>
+        </div>
+        <a href="https://x.com/Tachyon_robo" class="movable-pop-link" draggable="false">
+        <div id="movable-pop" class="movable-pop" style="top: 50vw;left: 70vw;background: #000000;">
+            <button class="pop-close-btn" id="pop-close-btn" aria-label="close"></button>
+            <img src="assets/image/pop/Xaccount.png" alt="Pop Image" class="pop-image" draggable="false">
+            <div class="pop-text">X (formerly Twitter) account</div>
+        </div>
+        </a>
+        <script src="scripts/movablePop.js"></script>
         <div class="locationArea">
             <div class="locationArea-content">
                 <div class="locationTextArea-text">
                     <p class="locationArea-subtitle">Location</p>
-                    <p class="locationArea-text">We are a Japanese team. We are based in Fukuoka and Tokyo, 1000 km from each other.</p>
+                    <p class="locationArea-text">We are a Japanese team with members in Fukuoka and Tokyo, located 1000 km apart.\]j
+
+                    </p>
                 </div>
                 <div>
                     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1BClWii--T0y6wSuHmcOsjp8jwFZgdiA&ehbc=2E312F&noprof=1" class="locationArea-map"></iframe>
@@ -85,6 +100,7 @@
             <div class="sponsorArea-content">
                 <img src="assets/image/sponsor-jlcpcb.png" alt="Logo" class="sponsorLogo">
             </div>
+            <p class="support-member-subtitle">support member:</p>
         </div>
         <footer class="footer">
             <p class="footer-text">Copyright © 2025 Tachyon. All rights reserved.</p>
